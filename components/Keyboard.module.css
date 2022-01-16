@@ -1,0 +1,15 @@
+.keyboard {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 600px;
+  gap: 3px;
+  align-items: center;
+}
+
+.keyboardRow {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  gap: 3px;
+  justify-content: center;
+}
