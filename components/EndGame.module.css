@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container :is(h3, h4) {
+  margin: 3px;
+}
+
+.container span {
+  color: hotpink;
+}
