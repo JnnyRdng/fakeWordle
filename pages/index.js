@@ -19,7 +19,7 @@ export default function Home() {
   }
   const emptyKeys = { A: '', B: '', C: '', D: '', E: '', F: '', G: '', H: '', I: '', J: '', K: '', L: '', M: '', N: '', O: '', P: '', Q: '', R: '', S: '', T: '', U: '', V: '', W: '', X: '', Y: '', Z: '', }
 
-  const [selectedWord, setSelectedWord] = useState('THUMB');
+  const [selectedWord, setSelectedWord] = useState(getRandomWord());
   const [typedWords, setTypedWords] = useState(emptyBoard);
   const [active, setActive] = useState(0);
   const [classes, setClasses] = useState(emptyClasses);
