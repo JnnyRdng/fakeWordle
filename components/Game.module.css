@@ -1,0 +1,32 @@
+.tile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 6px;
+}
+
+.game {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6px;
+}
+
+.darken {
+  filter: brightness(0.7);
+}
+
+.not-reached>div {
+  /* filter: brightness(0.2); */
+  /* background-color: ; */
+  opacity: 0.3;
+  /* border: 2px solid rgb(25, 27, 26); */
+}
