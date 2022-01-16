@@ -6,4 +6,4 @@ The word list is dubious, downloaded freely from [Curfew Communications](https:/
 
 ## Demo
 
-View the demo at [fake wordle](fake-wordle.vercel.app). Try not to enable react dev tools and cheat.
+View the demo at [fake wordle](https://fake-wordle.vercel.app). Try not to enable react dev tools and cheat.
