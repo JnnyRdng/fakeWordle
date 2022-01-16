@@ -7,6 +7,7 @@ import Game from '../components/Game';
 import { getRandomWord, getClasses } from '../utils/wordDictionary';
 import { ROWS } from '../utils/config';
 import EndGame from '../components/EndGame';
+import Key from '../components/Key';
 
 
 export default function Home() {
@@ -98,7 +99,7 @@ export default function Home() {
           <Keyboard onKeyPress={onKeyPress} onBackspace={onBackspace} onValidate={onValidate} keyClasses={keyClasses} />
         }
         <br />
-        <button onClick={() => resetGame()}>Reset</button>
+        <Key letter='New Game' wide={true} onKeyPress={resetGame} />
       </main>
     </div>
   )
