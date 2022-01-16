@@ -1,10 +1,10 @@
 import styles from './Key.module.css';
 
-export default function Key({ onKeyPress, letter, keyClass, wide = false }) {
+export default function Key({ onKeyPress, letter, keyClass, width = 'regular' }) {
 
   const keyStyle = [
     styles.key,
-    wide ? styles.wideKey : styles.regularKey,
+    styles[`${width}Key`],
     'default-colour',
     keyClass,
   ].join(' ');

@@ -7,7 +7,6 @@ import Game from '../components/Game';
 import { getRandomWord, getClasses } from '../utils/wordDictionary';
 import { ROWS } from '../utils/config';
 import EndGame from '../components/EndGame';
-import Key from '../components/Key';
 
 
 export default function Home() {
@@ -52,7 +51,7 @@ export default function Home() {
     if (word.length !== 5) return;
 
     const rowClass = getClasses(selectedWord, word);
-    // set classes on keyboard keys
+    // set classes on keyboard keys if a valid word
     if (!rowClass.every(className => className === 'not-a-word')) {
       addKeyClasses(word, rowClass);
     }
@@ -94,12 +93,10 @@ export default function Home() {
         <Game typedWords={typedWords} activeRow={active} classes={classes} />
         <br />
         {failed || won ?
-          <EndGame isSuccess={won} word={selectedWord} />
+          <EndGame isSuccess={won} word={selectedWord} reset={resetGame} />
           :
           <Keyboard onKeyPress={onKeyPress} onBackspace={onBackspace} onValidate={onValidate} keyClasses={keyClasses} />
         }
-        <br />
-        <Key letter='New Game' wide={true} onKeyPress={resetGame} />
       </main>
     </div>
   )

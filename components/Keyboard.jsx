@@ -15,8 +15,8 @@ export default function Keyboard({ onKeyPress, onBackspace, onValidate, keyClass
     });
   }
 
-  const enterKey = <Key key='enter' letter={'GO'} wide={true} onKeyPress={onValidate} />
-  const backspaceKey = <Key key='backspace' letter={'⌫'} wide={true} onKeyPress={onBackspace} />
+  const enterKey = <Key key='enter' letter={'GO'} width='wide' onKeyPress={onValidate} />
+  const backspaceKey = <Key key='backspace' letter={'⌫'} width='wide' onKeyPress={onBackspace} />
 
   botRow.unshift(enterKey);
   botRow.push(backspaceKey);
